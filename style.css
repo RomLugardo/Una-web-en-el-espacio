@@ -1,0 +1,269 @@
+body{
+    background-color:#010019;
+    /*background-image: url(https://img.freepik.com/fotos-premium/estrellas-galaxias-espacio-ultraterrestre-cielo-noche-universo-negro-estrellado-starfield-brillante_146539-1356.jpg);*/
+    font-family: 'Poppins', sans-serif;
+    color:#E8EAD4;
+}
+
+.header{
+    margin-top:30px;
+    font-family:'Poppins', sans-serif;   
+}    
+
+
+
+.credit{
+    opacity: .5;
+}
+
+.btn-close{
+    background-color:#5B4433;
+}
+
+.offcanvas-btn-open{
+    background-color: #010019;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 1%;
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 10px;
+    height: 10px;
+
+}
+
+.offcanvas-header{
+background-color:#010019;
+color:#CBA080;
+font-family: 'Courier New', Courier, monospace;
+padding: 20px;
+}
+
+.offcanvas-title{
+font-size: 50px;
+}
+
+.offcanvas-body{
+    background-color:#1D1C39;
+    color: #E8EAD4;
+    font-size: 20px;
+
+}
+
+.offcanvas-body a{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.offcanvas-body a:visited{
+    margin-bottom: 20px;
+    color: white;
+}
+
+.luna{
+margin-left:50px;
+}
+
+a:visited{
+    color:#CEEDFF;
+}
+
+a:link{
+    text-decoration: #325482;
+    color:aliceblue;
+}
+
+.main-title{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+
+.hr1{
+    margin-top: 150px;
+    height: 20px;
+    background-color:#010015;
+    border:0;
+}
+
+.hrb{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    height: 20px;
+    background-color:#010015;
+    border:0;
+}
+
+/*img{
+    width: 200px;
+
+}
+
+.estrellas{
+    text-align: center;
+    width: 200px;
+    border-color:20px 1px 1px #325482;
+}
+ el ".estrellas" es la clase del elemento (imagen) que queremos modificar en estilo*/
+
+.top-estrellas{
+    font-family: 'Oxygen', sans-serif;
+    color: #CBA080;
+    margin-bottom: 30px;
+}
+
+/*animación imagenes "lo más buscado"*/
+
+.contenedor-imagenes {
+    display: flex;
+    width: 100%;
+    height: auto;
+    }
+.contenedor-imagenes img{
+    width: 0px;
+    height: auto;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: -5s ease;
+}
+
+.contenedor-imagenes img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+  
+
+.top-misiones{
+    font-family: 'Oxygen', sans-serif;
+    color: #CBA080;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.hr2{
+    margin-top: 50px;
+    height: 20px;
+    background-color:#010015;
+    border:0;  
+}
+
+.title-ciencias{
+color: #CBA080;
+font-family: 'Oxygen', sans-serif;
+font-size: 40px; 
+margin-top: 60px;
+margin-bottom: 50px;  
+margin-left: 25px;
+}
+
+/*.title-astrobio{
+    color: #CBA080;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 30px;   
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.title-astrofis{
+    color: #CBA080;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 30px;   
+    margin-top: 20px;
+    margin-bottom: 50px;
+}*/
+
+.title-origenes{
+    color: #CBA080;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 40px; 
+    margin-top: 60px;
+    margin-bottom: 0px;  
+    margin-left: 25px;
+}
+
+.title-estrellas{
+    color: #CBA080;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 30px;   
+}
+
+.card{
+    background-color:#CBA080;
+    color: #010019;
+    padding: 10px;
+    border-width: 3px;
+    border-color: #5B4433;
+    display: inline-flex;
+    margin-top: 0;
+    margin-left: 33px;
+    vertical-align:text-top;
+    margin-right: 30px;
+    
+}
+
+.card-title{
+    font-family:'Courier New', Courier, monospace;
+    font-style: bold;
+}
+
+.card a{
+    background-color:#CEEDFF;
+    border-color: #5B4433;
+    color: #5B4433;
+    font-style: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card a:hover{
+    background-color: #325482;
+}
+
+footer{
+    background-color:#14100D;
+    position: relative;
+    width: 100%;
+    bottom: 0%;
+    color:#CBA080;
+    font-size: 20px;
+    margin-top: 50px;
+
+
+}
+
+.footer-left{
+    margin-left: 25px;
+    padding-top: 15px;
+}
+
+footer .line-footer{
+    border:0.5px solid rgb(224, 224, 224);
+    margin-bottom:0px ;
+    
+}
+
+.underline-right{
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    float: center;
+    margin-left: 450px;
+    padding-top: 15px;
+
+}
+
+.underline-right a{
+    color:#CBA080;
+    font-size: 15px;
+    
+}
+
+

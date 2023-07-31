@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una web en el espacio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--emparejar con bootstrap-->
+    <link rel="stylesheet" href="/style.css">
+    <!--emparejar con archivo css-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <!--últimas tres líneas, descargadas de Google Fonts para "Oxygen Light 300"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <!--Poppins de Google Fonts-->
+</head>
+<body>
+<!--javascript de Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <header class="header" id="main-header">
+
+
+        <!--span>&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+		<a href="#listas">Lo más buscado</a>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+        <span>|</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>  
+        <a class="header1" href="#astrofisica">Ciencias</a>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+        <span>|</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>    
+        <a href="#universo">Origen del Universo</a>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+        <span>|</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+        <a href="#estrellas">Origen de las estrellas</a>-->
+
+        <button class="offcanvas-btn-open" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img src="/images/menu_hamburguesa.png" height="40" width="40"></button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menú</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+		<a class="btn btn-secondary" href="#listas">Lo más buscado</a>
+        <br></br>
+        
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Ciencias
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#astrofisica">Astrofisica</a></li>
+              <li><a class="dropdown-item" href="#astrobiologia">Astrobiología</a></li>
+            </ul>
+          </div>
+          <br></br>
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Origen de...
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#origen">Origen del Universo</a></li>
+              <li><a class="dropdown-item" href="#origen">Origen de las estrellas</a></li>
+              <li><a class="dropdown-item" href="#origen">Origen del Sistema Solar</a></li>
+              <li><a class="dropdown-item" href="#origen">Origen de la Tierra</a></li>
+            </ul>
+          </div>
+     
+  </div>
+</div>
+
+
+    </header>
+    <main>
+
+<!--íconos animados-->
+<!--luna-->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<script class="luna" src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <lord-icon
+        src="https://cdn.lordicon.com/tgnqhsfe.json"
+        trigger="loop"
+        colors="primary:#faefd1,secondary:#d1f3fa"
+        state="loop"
+        style="width:150px;height:150px">
+    </lord-icon>
+<!--globo-->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/gqzfzudq.json"
+    trigger="loop"
+    colors="primary:#d1f3fa,secondary:#faefd1"
+    state="loop"
+    style="width:100px;height:100px">
+</lord-icon>
+
+<!--globo-->
+
+<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/gqzfzudq.json"
+    trigger="loop"
+    colors="primary:#d1f3fa,secondary:#faefd1"
+    state="loop"
+    style="width:100px;height:100px">
+</lord-icon>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--belen-->
+<script class="belen" src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <lord-icon
+        src="https://cdn.lordicon.com/qjvxqdov.json"
+        trigger="loop"
+        colors="primary:#d1f3fa,secondary:#faefd1"
+        state="loop"
+        style="width:150px;height:150px"
+        style="margin-right: -50px;">
+    </lord-icon>
+
+        <!--contenido principal-->
+        <h1 class="main-title" >Una web en el espacio</h1>
+       
+        <!--<img class="estrellas" src="https://i.pinimg.com/564x/6a/9e/1b/6a9e1be1dce2858dca3388dca99088d7.jpg">-->
+        <!--"alt=""" da más información de la imágen, pero no es necesaria, es la descripción otorgada a gente ciega-->
+        <!--"img" indica el elemento imagen-->
+        <!--<img src="/images/estrellas.jpeg" alt="Estrellas"> -->
+        <!--para pegar fotos de mi compu, después de instalarla en la carpeta images, ponemos una diagonal y seguimos el autocompletado-->
+
+<!--lluvia-->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<script class="lluvia" src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <lord-icon
+        src="https://cdn.lordicon.com/etwtznjn.json"
+        trigger="loop"
+        colors="primary:#faefd1,secondary:#d1f3fa"
+        state="loop"
+        style="width:150px;height:150px">
+    </lord-icon>
+
+        <!--constelacion-->
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<script class="constelacion" src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <lord-icon
+        src="https://cdn.lordicon.com/kqxqomzp.json"
+        trigger="loop"
+        colors="primary:#d1f3fa,secondary:#faefd1"
+        state="loop"
+        style="width:150px;height:150px">
+    </lord-icon>
+
+
+
+    <hr class="hr1"></hr>
+		
+
+        <p class="credit">
+            Programado por Romina Lugardo <br>
+            Julio 2023</br>
+        </p>
+        <hr class="hrb"></hr>
+        <div> 
+            <!--"div" sirve para hacer divisiones-->
+            <h3 class="top-estrellas" id="listas">Top de estrellas más masivas</h3>
+            <!--título de lista-->
+            <ul>
+                <!--"ol" significa listas ordenadas-->
+                <li>R136a1, estrella hipergigante azul</li>
+                <!--"li" es para cada item de la lista-->
+                <!--para evitar copiar y pegar, podemos sólo escribir "li*numdeitems" y dar enter-->
+                <li>Estrella de la Nebulosa Peonía</li>
+                <li>Estrella Pistola</li>
+
+            </ul>
+            <section class="contenedor-imagenes">
+                <img class="estrella1" src="https://i.pinimg.com/originals/05/c9/13/05c913fad9f28dc7333bb6cb2f5ca745.jpg">
+                <img class="estrella2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Peony_nebula.jpg/800px-Peony_nebula.jpg">
+                <img class="estrella3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Pistol_star_and_nebula.jpg/260px-Pistol_star_and_nebula.jpg">
+            </section>
+
+            <h3 class="top-misiones">Top de misiones espaciales</h3>
+            <ul>
+                <!--"ul" significa unordered list-->
+                <li>Apollo</li>
+                <li>Gemini</li>
+                <li>Challenger</li>
+                <li>Vostok</li>
+                <li>STS-61-B</li>
+            </ul>
+            <section class="contenedor-imagenes">
+                <img class="apollo" src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/images/589552main_as11-40-5875_full.jpg">
+                <img class="gemini" src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/images/222437main_GPN-2002-000031_full.jpg">
+                <img class="challenger" src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/images/106994main_image_feature_256_ajhfull.jpg">
+                <img class="vostok" src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/1961_april_yuri_gagarin.jpg">
+                <img class="STS-61-B" src="https://www.gaceta.unam.mx/wp-content/uploads/2020/11/neri004.jpg">
+            </section>
+        </div>
+
+       
+        <!-- "hr" significa división horizontal-->
+        <!--<div>
+            <a href="#astrobiologia">Astrobiología</a>
+            <a href="#universo">Origen del Universo</a>
+            <a href="#estrellas">Origen de las estrellas</a>
+            <!- "a" es un elemento ancla, es un hipervínculo hacia una sección de nuestra página-->
+        </div>
+
+        <hr class="hr2" id="astrofisica"></hr>
+        <!--el id sirve para que los hipervinculos sepan a donde ir-->
+<h3 class="title-ciencias" id="ciencias">Ciencias espaciales</h3>
+        <!--<h3 class="title-astrofis" id="astrofisica"> Astrofísica </h3>-->
+        
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/Astrofisica1.jpeg" class="d-block w-100" alt="1">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/Astrofisica2.jpeg" class="d-block w-100" alt="2">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/Astrofisica3.jpeg" class="d-block w-100" alt="3">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/Astrofisica4.jpeg" class="d-block w-100" alt="3">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/Astrofisica5.jpeg" class="d-block w-100" alt="3">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/Astrofisica6.jpeg" class="d-block w-100" alt="3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+       
+        <!--sección de aastrobiología-->
+
+        <hr class="hr2" id="astrobiologia"></hr>
+        <!--el id sirve para que los hipervinculos sepan a donde ir-->
+
+       <!-- <h3 class="title-astrobio" id="astrobiologia"> Astrobiología </h3>-->
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/images/Astrobiología 1.jpeg" class="d-block w-100" alt="1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/Astrobiología2.jpeg" class="d-block w-100" alt="2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/Astrobiología3.jpeg" class="d-block w-100" alt="3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/Astrobiología4.jpeg" class="d-block w-100" alt="3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/Astrobiología5.jpeg" class="d-block w-100" alt="3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/Astrobiología6.jpeg" class="d-block w-100" alt="3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/Astrobiología7.jpeg" class="d-block w-100" alt="3">
+                  </div>
+                </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!--seccion de astrofísica-->
+
+        <h3 class="title-origenes" id="origen"> Origen de... </h3>
+        <hr class="hr2"></hr>
+
+        <div class="card" style="width: 18rem;" id="universo">
+            <img src="https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2022/11/Fondo-cosmico-de-microondas-radiacion-1500x869.jpg?resize=780%2C452&quality=50&strip=all&ssl=1" class="card-img-top" alt="O-universo">
+            <div class="card-body">
+              <h5 class="card-title">Origen del Universo</h5>
+              <p class="card-text">La teoría que mejor describe el origen del Universo es la del “Big Bang”. 
+                En la propuesta el Universo completo estaba concentrado en un mismo punto, 
+                a partir del cual empezó a expandirse, desde las partículas elementales en 
+                los primeros milisegundos, hasta las galaxias que se pueden observar hoy en día. (Conexión Cinvestav, 2019)</p>
+              <a onclick="location.href='https://conexion.cinvestav.mx/Publicaciones/el-origen-del-universo'" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+
+
+
+        <!--<h3 class="title-estrellas" id="estrellas">Origen de las estrellas</h3>-->
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://www.astropolar.es/blog/wp-content/uploads/2020/04/Pilares-de-la-cracion-nebulosa-aguila-982x1024.jpg" class="card-img-top" alt="estrellas">
+            <div class="card-body">
+              <h5 class="card-title">Origen de las estrellas</h5>
+              <p class="card-text">Llamamos estrellas a un tipo de astro celeste muy numeroso en el Universo observable.
+                Consiste en una esfera luminosa de plasma que conserva su propia forma debido a la 
+                fuerza de gravedad que ella misma genera.
+                Las estrellas se forman a partir de nubes moleculares: regiones poco densas del espacio 
+                que consisten principalmente en hidrógeno, helio y otros elementos más pesados. (Equipo editorial Etecé, 2023)</p>
+
+              <a onclick="location.href='https://humanidades.com/estrellas/#:~:text=Origen%20de%20la%20estrellas,-Una%20estrella%20joven&text=Las%20estrellas%20se%20forman%20a,el%20choque%20con%20otras%20nubes.'" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Solar_System_true_color.jpg/330px-Solar_System_true_color.jpg" class="card-img-top" alt="estrellas">
+            <div class="card-body">
+              <h5 class="card-title">Origen del Sistema Solar</h5>
+              <p class="card-text">El Sistema Solar es un conjunto de planetas que consta 
+                de una estrella (el Sol) y todo lo que lo rodea gracias a la gravedad: 
+                planetas, planetas enanos, lunas, 
+                asteroides, cometas y meteoroides. Según explica la NASA, 
+                este sistema planetario se formó a partir de una densa nube de 
+                gas y polvo interestelar hace unos 4500 millones de años. (National Geographic, 2023)</p>
+
+              <a onclick="location.href='https://www.nationalgeographicla.com/espacio/2023/06/asi-fue-el-origen-del-sistema-solar#:~:text=Seg%C3%BAn%20explica%20la%20NASA%2C%20este,se%20form%C3%B3%20una%20nebulosa%20solar.'" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/940.jpg?w=1900&h=1427" class="card-img-top" alt="estrellas">
+            <div class="card-body">
+              <h5 class="card-title">Origen de la Tierra</h5>
+              <p class="card-text">La Tierra  primigenia se formó por la 
+                colisión y fusión de fragmentos de rocas más pequeños, de 
+                los denominados planetesimales.  Por ello, los elementos de 
+                la  Tierra primigenia debían estar repartidos de un modo 
+                relativamente homogéneo, Pero esta homogeneidad debió cambiar: 
+                la Tierra se fue calentando por causa de las desintegraciones 
+                radiactivas, por la creciente presión en su interior y, además,
+                 por el bombardeo de partículas provenientes del Universo.</p>
+
+              <a onclick="location.href='https://www.sgm.gob.mx/Web/MuseoVirtual/Planeta/Origen-del-planeta.html#:~:text=La%20Tierra%20es%20el%20mayor,miles%20de%20millones%20de%20a%C3%B1os.&text=La%20Tierra%20primigenia%20se%20form%C3%B3,peque%C3%B1os%2C%20de%20los%20denominados%20planetesimales.'" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+
+          
+<!--
+        <!--"form" elemento formulario, usuario ingresa información->
+         <form>
+            <p>¿Cuál es la edad del Universo?</p>
+            <!--pregunta superior a la casilla del formulario->
+            <label for="edad-universo"> 
+            <!--identificador de la respuesta->
+                <input type="text">
+                <!--tipo de datos a ingresar->
+                <button>Enviar</button>
+                <!--botón para enviar la información ingresada->
+            </label>
+
+            <p>¿Cuántas misiones Apollo existieron?</p>
+            <label for="3-misiones">
+            <!--etiqueta para identificar cada respuesta (3 misiones)->
+                <input type="radio" name="Apollo"> 3 misiones
+            </label>
+            <label for="10-misiones">
+                <input type="radio" name="Apollo"> 10 misiones
+            </label>
+            <!--la diferencia entre checkbox y radio es que en radio (círculo iluminado) sólo una opción puede
+            ser seleccionada y en checkbox (cuadro palomita) se puede seleccionar más de una->
+
+         </form>-->
+
+
+
+        
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <p>México</p>
+        </div>
+        <hr class="line-footer"></hr>
+    <div class="underline">
+        <ul class="underline-right">
+            
+            <li>
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSGLdnWcgWQqXnLsPPgjDQPWzNnPRchrTlxJQlKCbZxlMwCSszmZNwFBPmkJqcdCDFbtvsnG">romina.lugardo06@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </li>
+            <li>
+                <a href="https://github.com/RomLugardo">RomLugardo</a>
+            </li>
+            
+        </ul>
+
+    
+</body>
+</html>
